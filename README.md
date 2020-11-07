@@ -18,5 +18,5 @@ The operations performed are:
   
 Database Details:
 1) Database-: MySQL
-2) Table name-: AccountInfo(Columns-: Id(AutoIncrement), accountName,accountNum,pin,balance)
+2) Table name-: AccountInfo(Columns-: Id(AutoIncrement), accountName,accountNum,pin,balance) 
 
