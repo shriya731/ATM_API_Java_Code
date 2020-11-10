@@ -14,6 +14,7 @@ public class AtmServiceImpl implements AtmService {
 	    private AccountDAO accountDAO;
 
 	@Override
+	 @Transactional
 	public double checkBalance(long accountNumber) {
 		 return accountDAO.getBalance(accountNumber);
 	}
@@ -32,7 +33,7 @@ public class AtmServiceImpl implements AtmService {
 	        }
 	       
 	    }
-
+            @Override
 	    @Transactional
 	    public boolean deposit(long accountNumber, int amount) {
 	        if (amount > 0) {
@@ -45,6 +46,7 @@ public class AtmServiceImpl implements AtmService {
 	    }
 
 		@Override
+	         @Transactional
 		public void save(Account account) {
 			accountDAO.save(account);
 			
